@@ -5,9 +5,9 @@ const cities = {
   Tokyo: { lat: "35.71117846717539", lon: "139.7585749381366" },
   Sydney: { lat: "-33.87548157935858", lon: "151.21412370606936" },
 };
-export const password = "3e676422cf646c9e43f947db29536190";
-export let Taipei = `https://api.openweathermap.org/data/2.5/weather?lat=${cities.Taipei.lat}&lon=${cities.Taipei.lon}&appid=${password}&units=metric&lang=zh_tw`;
-export let NewYork = `https://api.openweathermap.org/data/2.5/weather?lat=${cities.NewYork.lat}&lon=${cities.NewYork.lon}&appid=${password}&units=metric&lang=zh_tw`;
-export let Paris = `https://api.openweathermap.org/data/2.5/weather?lat=${cities.Paris.lat}&lon=${cities.Paris.lon}&appid=${password}&units=metric&lang=zh_tw`;
-export let Tokyo = `https://api.openweathermap.org/data/2.5/weather?lat=${cities.Tokyo.lat}&lon=${cities.Tokyo.lon}&appid=${password}&units=metric&lang=zh_tw`;
-export let Sydney = `https://api.openweathermap.org/data/2.5/weather?lat=${cities.Sydney.lat}&lon=${cities.Sydney.lon}&appid=${password}&units=metric&lang=zh_tw`;
+export const key = "3e676422cf646c9e43f947db29536190";
+export let Taipei = `https://api.openweathermap.org/data/2.5/weather?lat=${cities.Taipei.lat}&lon=${cities.Taipei.lon}&appid=${key}&units=metric&lang=zh_tw`;
+export let NewYork = `https://api.openweathermap.org/data/2.5/weather?lat=${cities.NewYork.lat}&lon=${cities.NewYork.lon}&appid=${key}&units=metric&lang=zh_tw`;
+export let Paris = `https://api.openweathermap.org/data/2.5/weather?lat=${cities.Paris.lat}&lon=${cities.Paris.lon}&appid=${key}&units=metric&lang=zh_tw`;
+export let Tokyo = `https://api.openweathermap.org/data/2.5/weather?lat=${cities.Tokyo.lat}&lon=${cities.Tokyo.lon}&appid=${key}&units=metric&lang=zh_tw`;
+export let Sydney = `https://api.openweathermap.org/data/2.5/weather?lat=${cities.Sydney.lat}&lon=${cities.Sydney.lon}&appid=${key}&units=metric&lang=zh_tw`;
