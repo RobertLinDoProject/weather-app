@@ -1,9 +1,9 @@
-import { password } from "./URL.mjs";
+import { key } from "./URL.mjs";
 
 export async function hashPassword() {
   // password trans to ArrayBuffer
   const encoder = new TextEncoder();
-  const data = encoder.encode(password);
+  const data = encoder.encode(key);
 
   // built a SHA-256 Hash object
   const hashBuffer = await crypto.subtle.digest("SHA-256", data);

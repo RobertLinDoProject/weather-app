@@ -10,3 +10,10 @@ import {
 hashPassword().then((value) => {
   console.log(value);
 });
+
+async function fetchAllData() {
+  let TaipeiData = await NewTaipeiData();
+  console.log(TaipeiData);
+}
+
+fetchAllData();
