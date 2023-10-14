@@ -1,0 +1,69 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+body .container {
+  display: flex;
+  width: 90vw;
+}
+body .container .panel {
+  flex: 0.5;
+  cursor: pointer;
+  border-radius: 50px;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+body .container h1 {
+  font-size: 50px;
+  text-shadow: 2px 1px blue;
+  position: absolute;
+  bottom: 20px;
+  color: rgb(255, 255, 255);
+  left: 10px;
+  opacity: 0;
+}
+body .container .panel.active h1 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+body .container .panel.active {
+  flex: 5;
+}
+body .container #Taipei {
+  background-image: url("https://images.unsplash.com/photo-1470004914212-05527e49370b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2874&q=80");
+}
+body .container #NewYork {
+  background-image: url("https://images.unsplash.com/photo-1543788303-c15e49305bc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2832&q=80");
+}
+body .container #Tokyo {
+  background-image: url("https://images.unsplash.com/photo-1551322120-c697cf88fbdc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2938&q=80");
+}
+body .container #Paris {
+  background-image: url("https://images.unsplash.com/photo-1520939817895-060bdaf4fe1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2823&q=80");
+}
+body .container #Sydney {
+  background-image: url("https://images.unsplash.com/photo-1523428096881-5bd79d043006?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80");
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

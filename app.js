@@ -11,9 +11,10 @@ hashPassword().then((value) => {
   console.log(value);
 });
 
+function description() {}
+
 async function fetchAllData() {
   let TaipeiData = await NewTaipeiData();
   console.log(TaipeiData);
 }
-
 fetchAllData();
