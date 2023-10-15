@@ -30,7 +30,7 @@ export async function NewTaipeiData() {
 export async function NewNewYorkData() {
   let data = await NewYorkData();
   let NewData = {};
-  console.log(data);
+
   //use element to filter origin object
   for (let i of elementsCheck) {
     if (data[i] !== undefined) {
@@ -42,7 +42,7 @@ export async function NewNewYorkData() {
 export async function NewParisData() {
   let data = await ParisData();
   let NewData = {};
-  console.log(data);
+
   //use element to filter origin object
   for (let i of elementsCheck) {
     if (data[i] !== undefined) {
@@ -54,7 +54,7 @@ export async function NewParisData() {
 export async function NewTokyoData() {
   let data = await TokyoData();
   let NewData = {};
-  console.log(data);
+
   //use element to filter origin object
   for (let i of elementsCheck) {
     if (data[i] !== undefined) {
@@ -66,7 +66,7 @@ export async function NewTokyoData() {
 export async function NewSydneyData() {
   let data = await SydneyData();
   let NewData = {};
-  console.log(data);
+
   //use element to filter origin object
   for (let i of elementsCheck) {
     if (data[i] !== undefined) {

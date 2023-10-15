@@ -1,4 +1,3 @@
-import { hashPassword } from "./modules/encryPassWord.mjs";
 import {
   NewTaipeiData,
   NewNewYorkData,
@@ -7,14 +6,13 @@ import {
   NewParisData,
 } from "./modules/filteredData.mjs";
 
-hashPassword().then((value) => {
-  console.log(value);
-});
-
-function description() {}
-
-async function fetchAllData() {
+export async function fetchAllData() {
   let TaipeiData = await NewTaipeiData();
-  console.log(TaipeiData);
+  let NewYorkData = await NewNewYorkData();
+  let TokyoData = await NewTokyoData();
+  let SydneyData = await NewSydneyData();
+  let ParisData = await NewParisData();
+  let data = [TaipeiData, NewYorkData, TokyoData, SydneyData, ParisData];
+
+  return data;
 }
-fetchAllData();
